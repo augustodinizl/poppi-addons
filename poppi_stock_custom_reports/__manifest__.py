@@ -4,7 +4,7 @@
 {
     'name': 'Poppi Stock Custom Reports',
     'summary': """
-        Custom QWEB reports for Poppi: "Minuta de transporte"and Ëtiqueta de Pacote"""",
+        Custom QWEB reports for Poppi: "Minuta de transporte" and "Etiqueta de Pacote"""",
     'version': '14.0.1.0.0',
     'license': 'AGPL-3',
     'author': 'Escodoo',
