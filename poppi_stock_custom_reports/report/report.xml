@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="report_poppi_package_shipping_label" model="ir.actions.report">
+        <field name="name">Etiqueta Pacote</field>
+        <field name="model">stock.picking</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">stock.picking.report_poppi_package_shipping_label</field>
+        <field name="report_file">poppi_stock_custom_reports.report_poppi_package_shipping_label</field>
+        <field name="binding_model_id" ref="stock"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
