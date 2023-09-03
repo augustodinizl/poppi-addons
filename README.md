@@ -22,6 +22,9 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [l10n_br_coa_poppi](l10n_br_coa_poppi/) | 14.0.1.0.0 |  | Plano de Contas Formato Poppi
+[poppi_delivery_custom](poppi_delivery_custom/) | 14.0.1.0.0 |  | Poppi Delivery Custom
+[poppi_manufacture_custom](poppi_manufacture_custom/) | 14.0.1.0.0 |  | Poppi Manufacture Custom
+[poppi_purchase_custom](poppi_purchase_custom/) | 14.0.1.0.0 |  | Poppi Purchase Custom
 
 [//]: # (end addons)
 
