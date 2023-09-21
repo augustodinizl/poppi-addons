@@ -14,10 +14,27 @@
     </xpath>
     <xpath expr="//td[@id='product']" position="before">
       <td id="product.orig">
-        [<span t-field="line.product_id.default_code" />] <span
-                    t-field="line.product_id.name"
-                />
+        [<span t-field="line.product_id.default_code"/>] <span t-field="line.product_id.name"/>
       </td>
+    </xpath>
+    <xpath expr="//td[@name='td_taxes']/span" position="attributes">
+        <attribute name="style">display: none;</attribute>
+    </xpath>
+    <xpath expr="//td[@name='td_taxes']" position="inside">
+        <span>
+            <t t-esc="line.icms_tax_id.name"/><t t-if="line.icms_tax_id.name">,</t>
+            <t t-esc="line.ipi_tax_id.name"/><t t-if="line.ipi_tax_id.name">,</t>
+            <t t-esc="line.pis_tax_id.name"/><t t-if="line.pis_tax_id.name">,</t> 
+            <t t-esc="line.cofins_tax_id.name"/><t t-if="line.cofins_tax_id.name">,</t> 
+            <t t-esc="line.irpj_tax_id.name"/><t t-if="line.irpj_tax_id.name">,</t> 
+            <t t-esc="line.inss_tax_id.name"/>
+        </span>
+    </xpath>
+    <xpath expr="//div[@id='informations']" position="inside">
+      <div t-if="o.payment_term_id" class="col-3 bm-2">
+          <strong>Condições de pagamento:</strong>
+          <p t-field="o.payment_term_id" class="m-0"/>
+      </div>
     </xpath>
   </template>
 </odoo>
